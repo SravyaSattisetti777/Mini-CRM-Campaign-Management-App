@@ -2,14 +2,15 @@
 .hero-container {
   background: linear-gradient(to right, #4f46e5, #1487b8);
   color: white;
-  padding: 3rem 2rem;
+  padding: 3rem;
   text-align: center;
   position: relative;
   margin-top: 2.6%;
+  max-width: 170rem;
 }
 
 .hero-content {
-  max-width: 60rem;
+  max-width: 80rem;
   margin: 0 auto;
 }
 
@@ -23,7 +24,7 @@
 
 .hero-description {
   font-size: 1.25rem; 
-  max-width: 40rem; 
+  max-width: 55rem; 
   margin: 0 auto 2rem;
   color: white;
 }
