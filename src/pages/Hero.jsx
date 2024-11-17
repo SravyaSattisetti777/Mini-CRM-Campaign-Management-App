@@ -10,7 +10,7 @@ function Hero() {
   return (
     <div className="hero-container">
       <div className="hero-content">
-        <h1 className="hero-title">Welcome to Your CRM & Campaign Management</h1>
+        <h1 className="hero-title">Welcome to Your CRM & Campaign Management App</h1>
         <p className="hero-description">
           Effortlessly streamline your campaigns, manage targeted audiences, and monitor your success—all in one place with our robust CRM platform. Optimize your efforts and drive better results with ease.
         </p>
