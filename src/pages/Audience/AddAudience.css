@@ -1,0 +1,182 @@
+
+.form-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 1px 10px rgba(0, 0, 0, 0.05);
+    max-width: 800px;
+    margin: 0 auto;
+    border: 2px solid #e2e8f0;
+}
+
+
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.form-label {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    width: 150px;
+    margin-right: 20px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #000;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+    transition: border-color 0.3s, background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+
+.form-input:focus {
+    border-color: #000;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background-color: #e2e8f0;
+}
+
+
+.condition-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-left: 7%;
+}
+
+.remove-condition-button {
+    background-color: transparent;
+    color: #e53e3e;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.remove-condition-button:hover {
+    color: #c53030;
+}
+
+.add-condition-button, .submit-button {
+    background-color: #2b6cb0;
+    color: #fff;
+    font-weight: 600;
+    padding: 12px 28px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+    margin-right: 17%;
+    margin-top: 5%;
+}
+
+.add-condition-button:hover, .submit-button:hover {
+    background-color: #03468f;
+    transform: scale(1.05);
+}
+
+.add-condition-button:active, .submit-button:active {
+    background-color: #03468f;
+}
+
+.add-condition-button:disabled, .submit-button:disabled {
+    background-color: #2b6cb0;
+    cursor: not-allowed;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (max-width: 640px) {
+    .form-container {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .form-label {
+        font-size: 1.2rem;
+        width: 120px;
+    }
+
+    .form-input {
+        width: calc(100% - 120px);
+    }
+
+    .condition-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .remove-condition-button {
+        margin-top: 5px;
+    }
+
+    .add-condition-button, .submit-button {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    .form-container {
+        padding: 30px;
+        max-width: 100%;
+    }
+
+    .form-label {
+        font-size: 1.4rem;
+        width: 130px;
+    }
+
+    .form-input {
+        width: calc(100% - 130px);
+    }
+
+    .condition-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .add-condition-button, .submit-button {
+        width: 45%;
+        margin-right: 10%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .form-container {
+        padding: 40px;
+        max-width: 800px;
+    }
+
+    .form-label {
+        font-size: 1.5rem;
+        width: 150px;
+    }
+
+    .form-input {
+        width: calc(100% - 150px);
+    }
+
+    .condition-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .add-condition-button, .submit-button {
+        width: 45%;
+        margin-right: 10%;
+    }
+}

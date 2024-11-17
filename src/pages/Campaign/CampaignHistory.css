@@ -1,0 +1,179 @@
+.campaign-history-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0px;
+    color: #333;
+}
+
+.add-campaign-btn {
+    background-color: #e53e3e;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.add-campaign-btn:hover {
+    background-color: #c53030;
+    transform: scale(1.05);
+}
+
+.add-campaign-btn:active {
+    background-color: #9b2c2c;
+}
+
+.table-container {
+    overflow-x: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 20px;
+}
+
+.campaign-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.campaign-table th,
+.campaign-table td {
+    padding: 12px;
+    text-align: left;
+    font-size: 1rem;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+.campaign-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.campaign-table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.campaign-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table-row {
+    transition: background-color 0.3s ease;
+}
+
+.table-row:hover {
+    background-color: #f9f9f9;
+}
+
+.campaign-table td {
+    color: #555;
+}
+
+.campaign-table td:first-child,
+.campaign-table th:first-child {
+    font-weight: 600;
+}
+
+.view-details-btn {
+    color: #3182ce;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.view-details-btn:hover {
+    color: #2b6cb0;
+    transform: scale(1.05);
+}
+
+@media (max-width: 1200px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .add-campaign-btn {
+        font-size: 1.1rem;
+        padding: 10px 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .add-campaign-btn {
+        font-size: 1rem;
+        padding: 8px 20px;
+    }
+
+    .campaign-table th,
+    .campaign-table td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .campaign-table {
+        font-size: 0.9rem;
+    }
+
+    .view-details-btn {
+        font-size: 0.9rem;
+        padding: 6px 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .add-campaign-btn {
+        font-size: 0.9rem;
+        padding: 6px 15px;
+    }
+
+    .campaign-table th,
+    .campaign-table td {
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+
+    .view-details-btn {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+}

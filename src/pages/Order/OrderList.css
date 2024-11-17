@@ -1,0 +1,256 @@
+/* OrderList.css */
+.order-list-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0px;
+    color: #333;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.edit-btn, .delete-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.edit-btn:hover, .delete-btn:hover {
+    transform: scale(1.1);
+}
+
+.delete-btn {
+    background-color: #ff4d4f;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #d9363e;
+}
+
+.add-order-btn {
+    background-color: #e53e3e;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.add-order-btn:hover {
+    background-color: #c53030;
+    transform: scale(1.05);
+}
+
+.add-order-btn:active {
+    background-color: #9b2c2c;
+}
+
+.table-container {
+    overflow-x: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 20px;
+}
+
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.order-table th,
+.order-table td {
+    padding: 12px;
+    text-align: left;
+    font-size: 1rem;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+.order-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.order-table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.order-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table-row {
+    transition: background-color 0.3s ease;
+}
+
+.table-row:hover {
+    background-color: #f9f9f9;
+}
+
+.order-table td {
+    color: #555;
+}
+
+.order-table td:first-child,
+.order-table th:first-child {
+    font-weight: 600;
+}
+
+.order-list-container .edit-btn {
+    background-color: #3182ce;
+    color: white;
+    border: none;
+}
+
+.order-list-container .edit-btn:hover {
+    background-color: #2b6cb0;
+    transform: scale(1.05);
+}
+
+@media (max-width: 1200px) {
+    .order-list-container {
+        padding: 15px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .order-table th, .order-table td {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .add-order-btn {
+        font-size: 1.1rem;
+        padding: 10px 25px;
+    }
+
+    .edit-btn, .delete-btn {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .action-buttons {
+        margin-top: 10px;
+    }
+
+    .order-table th, .order-table td {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+
+    .add-order-btn {
+        font-size: 1.1rem;
+        padding: 10px 25px;
+    }
+
+    .edit-btn, .delete-btn {
+        font-size: 0.85rem;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .order-list-container {
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .table-container {
+        overflow-x: auto;
+    }
+
+    .order-table th, .order-table td {
+        font-size: 0.8rem;
+        padding: 8px 12px;
+    }
+
+    .add-order-btn {
+        font-size: 1rem;
+        padding: 8px 20px;
+    }
+
+    .edit-btn, .delete-btn {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .order-list-container {
+        padding: 5px;
+    }
+
+    .title {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .order-table th, .order-table td {
+        font-size: 0.75rem;
+        padding: 6px 10px;
+    }
+
+    .add-order-btn {
+        font-size: 0.9rem;
+        padding: 6px 15px;
+    }
+
+    .edit-btn, .delete-btn {
+        font-size: 0.75rem;
+        padding: 5px 10px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        gap: 3px;
+        align-items: flex-start;
+    }
+}

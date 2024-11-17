@@ -1,0 +1,235 @@
+.dashboard-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #e0e7ff, #dbeafe); /* Light gradient background */
+  margin-top: 5%;
+}
+
+.dashboard-header {
+  background-color: #4f46e5;
+  color: white;
+  text-align: center;
+  padding: 24px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.dashboard-main {
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 1200px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-section {
+  margin-bottom: 30px;
+}
+
+.welcome-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.welcome-text {
+  font-size: 1.125rem;
+  color: #6b7280;
+}
+
+.stats-overview {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.stat-card {
+  background-color: #6366f1;
+  color: white;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.stat-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.bg-indigo {
+  background-color: #6366f1;
+}
+
+.bg-green {
+  background-color: #10b981;
+}
+
+.bg-blue {
+  background-color: #3b82f6;
+}
+
+.bg-orange {
+  background-color: #f59e0b;
+}
+
+.recent-activities {
+  background-color: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 32px;
+}
+
+.recent-activities-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4b5563;
+  margin-bottom: 30px;
+}
+
+.activities-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.activity-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 16px;
+}
+
+.cta-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+}
+
+.cta-button {
+  background-color: #4f46e5;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #4338ca;
+  transform: scale(1.05);
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 1200px) {
+  .dashboard-main {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .welcome-title {
+    font-size: 1.75rem;
+  }
+
+  .stat-title {
+    font-size: 1.25rem;
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+  }
+
+  .stat-card {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-overview {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .welcome-title {
+    font-size: 1.5rem;
+  }
+
+  .welcome-text {
+    font-size: 1rem;
+  }
+
+  .stat-title {
+    font-size: 1.125rem;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .recent-activities-title {
+    font-size: 1.25rem;
+  }
+
+  .activity-item {
+    font-size: 0.9rem;
+  }
+
+  .cta-button {
+    font-size: 1.25rem;
+    padding: 0.75rem 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-header {
+    padding: 16px;
+  }
+
+  .dashboard-title {
+    font-size: 2rem;
+  }
+
+  .welcome-title {
+    font-size: 1.25rem;
+  }
+
+  .stats-overview {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .stat-card {
+    padding: 20px;
+  }
+
+  .stat-title {
+    font-size: 1rem;
+  }
+
+  .stat-number {
+    font-size: 1.75rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}

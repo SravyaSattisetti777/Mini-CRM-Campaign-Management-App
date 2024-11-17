@@ -1,0 +1,212 @@
+/* Header Styling */
+.header {
+  background-color: #4f46e5;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: yellow;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+}
+
+.logo:hover {
+  color: #6366f1;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-button {
+  background-color: #6366f1;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  font-size: 150%;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  max-width: 200px;
+  margin: 5px;
+}
+
+.nav-button:hover {
+  background-color: #4c51bf;
+}
+
+.auth-button {
+  display: flex;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+
+.login-btn,
+.logout-btn {
+  font-weight: 600;
+  font-size: 150%;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn {
+  background-color: #10b981;
+  color: white;
+}
+
+.login-btn:hover {
+  background-color: #059669;
+}
+
+.logout-btn {
+  background-color: #ef4444;
+  color: white;
+}
+
+.logout-btn:hover {
+  background-color: #dc2626;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .header-content {
+    padding: 0.5rem 1.5rem;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+  }
+
+  .nav-button {
+    font-size: 1.2rem;
+    padding: 0.5rem 1.2rem;
+  }
+
+  .login-btn,
+  .logout-btn {
+    font-size: 1.2rem;
+    padding: 0.5rem 1.2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .logo {
+    font-size: 1.6rem;
+  }
+
+  .nav-links {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .nav-button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .auth-button {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0.5rem;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .nav-button {
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .auth-button {
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .login-btn,
+  .logout-btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .nav-button {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .login-btn,
+  .logout-btn {
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+  }
+
+  .auth-button {
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: center;
+  }
+}

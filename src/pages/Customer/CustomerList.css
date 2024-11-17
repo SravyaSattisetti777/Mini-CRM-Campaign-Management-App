@@ -1,0 +1,232 @@
+.customer-list-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0px;
+    color: #333;
+}
+
+.add-customer-btn {
+    background-color: #e53e3e;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.add-customer-btn:hover {
+    background-color: #c53030;
+    transform: scale(1.05);
+}
+
+.add-customer-btn:active {
+    background-color: #9b2c2c;
+}
+
+.table-container {
+    overflow-x: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 20px;
+}
+
+.customer-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.customer-table th,
+.customer-table td {
+    padding: 12px;
+    text-align: left;
+    font-size: 1rem;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+.customer-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.customer-table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.customer-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table-row {
+    transition: background-color 0.3s ease;
+}
+
+.table-row:hover {
+    background-color: #f9f9f9;
+}
+
+.customer-table td {
+    color: #555;
+}
+
+.customer-table td:first-child,
+.customer-table th:first-child {
+    font-weight: 600;
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.delete-btn,
+.edit-btn {
+    padding: 8px 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.delete-btn {
+    background-color: #e53e3e;
+    color: white;
+    border: none;
+}
+
+.delete-btn:hover {
+    background-color: #c53030;
+    transform: scale(1.05);
+}
+
+.customer-list-container .edit-btn {
+    background-color: #3182ce;
+    color: white;
+    border: none;
+}
+
+.customer-list-container .edit-btn:hover {
+    background-color: #2b6cb0;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .title {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .add-customer-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .table-container {
+        padding: 15px;
+    }
+
+    .customer-table th,
+    .customer-table td {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .customer-table td {
+        word-wrap: break-word;
+    }
+
+    .button-group {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .delete-btn,
+    .edit-btn {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .customer-list-container {
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 1.6rem;
+    }
+
+    .add-customer-btn {
+        width: 100%;
+        font-size: 1rem;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .table-container {
+        padding: 10px;
+    }
+
+    .customer-table th,
+    .customer-table td {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    .button-group {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .delete-btn,
+    .edit-btn {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .customer-table th,
+    .customer-table td {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .button-group {
+        gap: 8px;
+    }
+
+    .delete-btn,
+    .edit-btn {
+        font-size: 1rem;
+        padding: 7px 14px;
+    }
+}
