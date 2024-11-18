@@ -73,7 +73,7 @@ function AudienceView() {
                                 <th>Name</th>
                                 <th>Email</th>
                                 <th>Total Spending</th>
-                                <th>Visit Count</th>
+                                <th>Visits</th>
                                 <th>Last Visit</th>
                             </tr>
                         </thead>
