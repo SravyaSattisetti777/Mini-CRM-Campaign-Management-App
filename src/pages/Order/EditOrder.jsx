@@ -51,7 +51,7 @@ function EditOrder() {
         };
 
         try {
-            const response = await fetch(`${import.meta.env.VITE_SERVER_URL}api/orders/edit/${id}`, {
+            const response = await fetch(`${import.meta.env.VITE_SERVER_URL}/api/orders/edit/${id}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",
