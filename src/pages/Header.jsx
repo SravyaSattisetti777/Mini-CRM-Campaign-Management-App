@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { Button } from '../components/button';
 import './Header.css';
 
 const Header = () => {
@@ -37,11 +38,8 @@ const Header = () => {
   }, []);
 
   const handleLogin = () => {
-  const loginURL = `${import.meta.env.VITE_SERVER_URL}/auth/google`;
-  console.log('Redirecting to:', loginURL);
-  window.open(loginURL, '_self');
+    window.open(`${import.meta.env.VITE_SERVER_URL}/auth/google`, '_self');
   };
-
 
   const handleLogout = async () => {
     const confirmLogout = window.confirm("Are you sure you want to log out?");
