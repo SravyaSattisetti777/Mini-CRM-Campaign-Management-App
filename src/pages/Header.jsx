@@ -38,8 +38,11 @@ const Header = () => {
   }, []);
 
   const handleLogin = () => {
-    window.open(`${import.meta.env.VITE_SERVER_URL}/auth/google`, '_self');
-  };
+  const loginURL = `${import.meta.env.VITE_SERVER_URL}/auth/google`;
+  console.log('Redirecting to:', loginURL);
+  window.open(loginURL, '_self');
+};
+
 
   const handleLogout = async () => {
     const confirmLogout = window.confirm("Are you sure you want to log out?");
