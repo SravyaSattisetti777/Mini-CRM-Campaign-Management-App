@@ -16,9 +16,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 2rem;
   flex-wrap: wrap;
-  width: 100%;
+  padding: 0.5rem 2rem;
   box-sizing: border-box;
 }
 
@@ -45,9 +44,10 @@
 .nav-links {
   display: flex;
   gap: 1rem;
-  margin-top: 0;
+  margin: 0;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
 }
 
 .nav-button {
@@ -56,11 +56,11 @@
   padding: 0.75rem 1.5rem;
   border-radius: 1rem;
   font-weight: 600;
-  font-size: 150%;
+  font-size: 1rem;
   text-decoration: none;
   transition: background-color 0.3s ease;
-  max-width: 200px;
-  margin: 5px;
+  margin: 0.5rem;
+  width: fit-content;
 }
 
 .nav-button:hover {
@@ -76,7 +76,7 @@
 .login-btn,
 .logout-btn {
   font-weight: 600;
-  font-size: 150%;
+  font-size: 1rem;
   padding: 0.75rem 1.5rem;
   border-radius: 1rem;
   transition: background-color 0.3s ease;
@@ -101,112 +101,79 @@
 }
 
 /* Media Queries */
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
   .header-content {
-    padding: 0.5rem 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
   }
 
   .logo {
     font-size: 1.8rem;
   }
 
-  .nav-button {
-    font-size: 1.2rem;
-    padding: 0.5rem 1.2rem;
-  }
-
-  .login-btn,
-  .logout-btn {
-    font-size: 1.2rem;
-    padding: 0.5rem 1.2rem;
-  }
-}
-
-@media (max-width: 992px) {
-  .logo {
-    font-size: 1.6rem;
-  }
-
   .nav-links {
-    display: block;
-    text-align: center;
-    margin-top: 1rem;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
   }
 
   .nav-button {
+    width: 90%;
     font-size: 1rem;
-    padding: 0.5rem 1rem;
-    width: 100%;
-    margin-bottom: 0.5rem;
+    padding: 0.75rem 1.2rem;
   }
 
   .auth-button {
     margin-left: 0;
     margin-top: 1rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .header {
-    padding: 0.5rem;
-  }
-
-  .header-content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 0.5rem;
-  }
-
-  .logo {
-    font-size: 1.4rem;
-    text-align: center;
-  }
-
-  .nav-button {
-    font-size: 1rem;
-    padding: 0.5rem;
-    width: 100%;
-    margin-bottom: 0.5rem;
-  }
-
-  .auth-button {
-    margin-top: 1rem;
     width: 100%;
     justify-content: center;
   }
 
   .login-btn,
   .logout-btn {
+    width: 90%;
     font-size: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.6rem;
+  }
+
+  .nav-button {
+    width: 95%;
+    font-size: 0.9rem;
+    padding: 0.7rem;
+  }
+
+  .login-btn,
+  .logout-btn {
+    width: 95%;
+    font-size: 0.9rem;
+    padding: 0.7rem;
   }
 }
 
 @media (max-width: 480px) {
   .logo {
-    font-size: 1.2rem;
-    text-align: center;
+    font-size: 1.4rem;
   }
 
   .nav-button {
-    font-size: 0.9rem;
-    padding: 0.5rem;
     width: 100%;
-    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    padding: 0.6rem;
   }
 
   .login-btn,
   .logout-btn {
-    font-size: 1rem;
-    padding: 0.5rem;
     width: 100%;
-  }
-
-  .auth-button {
-    margin-top: 1rem;
-    width: 100%;
-    justify-content: center;
+    font-size: 0.9rem;
+    padding: 0.6rem;
   }
 }
