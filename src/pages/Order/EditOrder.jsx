@@ -17,7 +17,7 @@ function EditOrder() {
         try {
             setLoading(true);
             const response = await fetch(`${import.meta.env.VITE_SERVER_URL}/api/orders/edit/${id}`, {
-                method: "PUT",
+                method: "GET",
                 headers: {
                     "Content-Type": "application/json",
                 },
