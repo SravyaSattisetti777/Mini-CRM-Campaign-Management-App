@@ -111,7 +111,7 @@ function EditAudience() {
                             >
                                 <option value="" disabled>Select Condition</option>
                                 <option value="totalSpending">Total Spending</option>
-                                <option value="visitCount">Visit Count</option>
+                                <option value="visitCount">Visits</option>
                                 <option value="lastVisit">Last Visit</option>
                             </select>
                             <select
@@ -120,12 +120,12 @@ function EditAudience() {
                                 className="form-input"
                             >
                                 <option value="" disabled>Select Operator</option>
-                                <option value=">">Greater than</option>
-                                <option value=">=">Greater than and Equal to</option>
-                                <option value="<">Less than</option>
-                                <option value="<=">Less than and Equal to</option>
-                                <option value="!=">Not Equal to</option>
                                 <option value="=">Equal to</option>
+                                <option value="<">Less than</option>
+                                <option value=">">Greater than</option>
+                                <option value="!=">Not Equal to</option>
+                                <option value="<=">Less than and Equal to</option>
+                                <option value=">=">Greater than and Equal to</option>
                             </select>
                             <input
                                 type="text"
