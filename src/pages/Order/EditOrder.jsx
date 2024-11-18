@@ -16,12 +16,13 @@ function EditOrder() {
     const fetchOrder = async () => {
         try {
             setLoading(true);
-            const response = await fetch(`${import.meta.env.VITE_SERVER_URL}/api/orders/${id}`, {
-                method: "GET",
+            const response = await fetch(`${import.meta.env.VITE_SERVER_URL}/api/orders/edit/${id}`, {
+                method: "PUT",
                 headers: {
                     "Content-Type": "application/json",
                 },
                 credentials: "include",
+                body: JSON.stringify(updatedData),
             });
 
             if (!response.ok) {
