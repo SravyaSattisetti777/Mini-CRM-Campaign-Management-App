@@ -4,8 +4,11 @@ import './Hero.css';
 
 function Hero() {
   const handleGetStarted = () => {
-    window.open(`${import.meta.env.VITE_SERVER_URL}/auth/google`, "_self");
+    const authURL = `${import.meta.env.VITE_SERVER_URL}/auth/google`;
+    console.log('Redirecting to:', authURL);
+    window.open(authURL, '_self');
   };
+
 
   return (
     <div className="hero-container">
