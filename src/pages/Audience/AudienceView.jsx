@@ -11,7 +11,7 @@ function AudienceView() {
 
     const fetchAudience = async () => {
         try {
-            const response = await fetch(`${import.meta.env.VITE_SERVER_URL}api/audiences/${id}`, {
+            const response = await fetch(`${import.meta.env.VITE_SERVER_URL}/api/audiences/${id}`, {
                 method: 'GET',
                 headers: {
                     "Content-Type": "application/json",
