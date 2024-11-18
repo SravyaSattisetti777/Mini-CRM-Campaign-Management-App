@@ -11,7 +11,7 @@ function OrderList() {
 
     const fetchOrders = async () => {
         try {
-            const response = await fetch(`${import.meta.env.VITE_SERVER_URL}.onrender.com/api/orders/list`, {
+            const response = await fetch(`${import.meta.env.VITE_SERVER_URL}/api/orders/list`, {
                 method: "GET",
                 headers: { "Content-Type": "application/json" },
                 credentials: "include",
